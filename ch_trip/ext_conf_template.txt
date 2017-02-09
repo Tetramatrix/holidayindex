@@ -1,0 +1,14 @@
+# cat=basic; type=string; label= general extension upload path
+uploadPath = uploads/tx_chtrip
+
+# cat=basic; type=string; label= map (swf-file)
+swfFile = uploads/tx_chtrip/karte-suchergebnis.swf
+
+# cat=basic; type=string; label= xml file
+xmlPath = uploads/tx_chtrip/xmlfiles
+
+# cat=basic; type=string; label= video loader (swf-file)
+vLoader = uploads/tx_chtrip/loadVideo.swf
+
+# cat=basic; type=string; label= video file type (.flv)
+vType = flv

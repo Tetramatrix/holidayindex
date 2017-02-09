@@ -1,0 +1,781 @@
+<h3>FINDACCOMMODATION</h3>
+<em>This is the find accommodation template</em>
+<!-- ###FINDACCOMMODATION### begin -->
+<form name="tx_chtrip_pi1" action="###FORM###" method="post">
+	<table>
+		<tr><td colspan="2"><h3>Unterkunft Auswahl</h3></td><td rowspan="8">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="395" height="390" id="karte-suchergebnis" align="middle">
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="movie" value="###OBJSWFFILE###" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="wmode" value="transparent" />
+				<embed src="###EMBEDSWFFILE###" quality="high" bgcolor="#ffffff" wmode="transparent" width="365" height="390" name="amici-passbilder" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+			</object>		
+		</td></tr>
+		<tr><td colspan="2">Finden Sie die passen Unterkunft für Ihren Traumurlaub</td></tr>
+		<tr><td>Typ</td><td>Region</td></tr>
+		<tr><td rowspan="3">		
+			<table>
+				<tr><td>Alle</td><td><input type="checkbox" name="tx_chtrip_pi1[a]"></td></tr>
+				<!-- ###TYPESELECTION### begin -->
+					<!-- ###ITEM### -->
+						<tr><td>###TYPENAME###</td><td><input type="checkbox" name="tx_chtrip_pi1[###TYPE###]"></td></tr>
+					<!-- ###ITEM### -->
+				<!-- ###TYPESELECTION### end -->			
+			</table>				  
+		  </td><td>		
+			<select name="tx_chtrip_pi1[r]" size="1">
+				<!-- ###PULLDOWNBOX### begin -->
+					<!-- ###ITEM### -->
+						<option value="###UID###">###TITEL###</option>
+					<!-- ###ITEM### -->
+				<!-- ###PULLDOWNBOX### end -->
+			</select>		
+		</td></tr>
+		<tr><td><h3>Allgemein/Lage</h3></td></tr>
+		<tr><td>		
+			<table>
+				<!-- ###FINDSELECTION### begin -->
+					<!-- ###ITEM### -->
+						<tr><td>###FINDNAME###</td><td><input type="checkbox" name="tx_chtrip_pi1[###FIND###]"></td></tr>
+					<!-- ###ITEM### -->
+				<!-- ###FINDSELECTION### end -->			
+			</table>
+		</td></tr>
+	</table>
+	<input type="submit" name="submit" value="Italien ich komme!">
+</form>
+<!-- ###FINDACCOMMODATION### begin -->
+
+<h3>FINDACTIVITY</h3>
+<em>This is the find activity template</em>
+<!-- ###FINDACTIVITY### begin -->
+<form name="tx_chtrip_pi1" action="###FORM###" method="post">
+	<table>
+		<tr><td colspan="2"><h3>Unterkunft Auswahl</h3></td><td rowspan="8">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="365" height="390" id="flashkarte" align="middle">
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="movie" value="###OBJSWFFILE###" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="wmode" value="transparent" />
+				<embed src="###EMBEDSWFFILE###" quality="high" bgcolor="#ffffff" wmode="transparent" width="365" height="390" name="flashkarte" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+			</object>		
+		</td></tr>
+		<tr><td colspan="2">Finden Sie die passen Unterkunft für Ihren Traumurlaub</td></tr>
+		<tr><td>Typ</td><td>Region</td></tr>
+		<tr><td rowspan="3">		
+			&nbsp;
+		</td><td>		
+			<select name="tx_chtrip_pi1[r]" size="1">
+				<!-- ###PULLDOWNBOX### begin -->
+					<!-- ###ITEM### -->
+						<option value="###UID###">###TITEL###</option>
+					<!-- ###ITEM### -->
+				<!-- ###PULLDOWNBOX### end -->
+			</select>		
+		</td></tr>
+		<tr><td><h3>Allgemein/Lage</h3></td></tr>
+		<tr><td>		
+			<table>
+				<tr><td>Alle</td><td><input type="checkbox" name="tx_chtrip_pi1[a]"></td></tr>
+				<!-- ###FINDSELECTION### begin -->
+					<!-- ###ITEM### -->
+						<tr><td>###FINDNAME###</td><td><input type="checkbox" name="tx_chtrip_pi1[###FIND###]"></td></tr>
+					<!-- ###ITEM### -->
+				<!-- ###FINDSELECTION### end -->			
+			</table>
+		</td></tr>
+	</table>
+	<input type="submit" name="submit" value="Italien ich komme!">
+</form>
+<!-- ###FINDACTIVITY### begin -->
+
+<h3>Special Offer (Teaser)</h3>
+<em>This is the special offer teaser template</em>
+<!-- ###SPTEASER### begin -->
+	<!-- ###LOCATION### begin -->
+		<!-- ###ITEM### -->
+			<table>
+				<tr><td colspan="2">###REGION###,###TITLE###</td></tr>
+				<tr><td colspan="2">###TYPE###</td></tr>
+				<tr><td>###LINK######PRICE### €###LINK###</td><td rowspan="2">###DISCOUNT###</td></tr>
+				<tr><td>###PRICEINFO###</td></tr>
+			</table>
+		<!-- ###ITEM### -->
+	<!-- ###LOCATION### begin -->
+<!-- ###SPTEASER### end -->
+
+<h3>Special Offer (List)</h3>
+<em>This is the special offer list template</em>
+<!-- ###SPLIST### begin -->
+    ###TITLE###
+<!-- ###SPLIST### end -->
+
+<h3>Special Offer (Accommodation Tab)</h3>
+<em>This is the special offer for the accommodation tab template</em>
+<!-- ###SPACC### begin -->
+    <table>
+        <tr><td colspan="2">SONDERKONDITIONEN</td></tr>
+        <tr><td>###TITLE###</td><td>###DESCRIPTION###</td></tr>
+    </table>
+<!-- ###SPACC### end -->
+
+<h3>FINDSACCOMMODATION</h3>
+<em>This is the finds accommodation template</em>
+<!-- ###FINDSACCOMMODATION### begin -->
+	<table>
+		<tr>
+			<td>
+				Ihre Suche mit den Angaben:</td>
+		    <td rowspan="3">
+				<table>
+					<tr>
+						<td>					
+							<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="365" height="390" id="flashkarte" align="middle">
+							<param name="allowScriptAccess" value="sameDomain" />
+							<param name="movie" value="###OBJSWFFILE###" />
+							<param name="quality" value="high" />
+							<param name="bgcolor" value="#ffffff" />
+							<param name="wmode" value="transparent" />
+							<embed src="###EMBEDSWFFILE###" quality="high" bgcolor="#ffffff" wmode="transparent" width="365" height="390" name="amici-passbilder" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+						</object>
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+		<tr>
+			<td>Art: ###WHATINFO###<br>			
+			    Region: ###WHEREINFO###<br>
+			    Allg./Lage: ###MISCELLANEOUS###</td>
+		</tr>		
+		<tr>
+			<td>
+				brachte insgesamt (###COUNT###) Treffer.<br>
+			</td>
+		</tr>	
+	</table>
+<!-- ###FINDSACCOMMODATION### end -->
+
+<h3>FINDSACTIVITY</h3>
+<em>This is the finds activity template</em>
+<!-- ###FINDSACTIVITY### begin -->
+	<table>
+		<tr>
+			<td>
+				Ihre Suche mit den Angaben:</td>
+		    <td rowspan="3">
+				<table>
+					<tr>
+						<td>					
+							<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="365" height="390" id="flashkarte" align="middle">
+							<param name="allowScriptAccess" value="sameDomain" />
+							<param name="movie" value="###OBJSWFFILE###" />
+							<param name="quality" value="high" />
+							<param name="bgcolor" value="#ffffff" />
+							<param name="wmode" value="transparent" />
+							<embed src="###EMBEDSWFFILE###" quality="high" bgcolor="#ffffff" wmode="transparent" width="365" height="390" name="amici-passbilder" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+						</object>
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+		<tr>
+			<td>Aktivität: ###WHATINFO###<br>			
+			    Region: ###WHEREINFO###<br>
+			</td>
+		</tr>		
+		<tr>
+			<td>
+				brachte insgesamt (###COUNT###) Treffer.<br>
+			</td>
+		</tr>	
+	</table>
+<!-- ###FINDSACTIVITY### end -->
+
+
+<h3>FINDSSPECIALOFFER</h3>
+<em>This is the finds special offer template</em>
+<!-- ###FINDSSPECIALOFFER### begin -->
+    SPECIAL OFFER
+<!-- ###FINDSSPECIALOFFER### end -->
+
+
+<h3>TOPCATEGORY</h3>
+<em>This is the top category template</em>
+<!-- ###TOPCATEGORY### begin -->
+<table>
+	<tr><td><h3>###TITLE###</h3></td></tr>
+</table>
+<!-- ###TOPCATEGORY### end -->
+
+<h3>Objectlist</h3>
+<em>This is the objectlist template</em>
+<!-- ###OBJECTLIST### begin -->
+	<!-- ###SINGLEROW### begin -->
+			<!-- ###ITEM### -->
+				<table>
+					<tr>
+						<td rowspan="2">###IMAGE###</td><td>###TITLEICON######LINK######TITLE######LINK###, ###WHEREINFO###</td><td>###OBJECTICON###</td>
+					</tr>
+					<tr>
+						<td colspan="2">###TEASER###</td><td>###SPECIALOFFER###</td>
+					</tr>
+				</table>				
+			<!-- ###ITEM### -->
+	<!-- ###SINGLEROW### end -->
+<!-- ###OBJECTLIST### end -->
+
+<h3>Menu</h3>
+<em>This is the menu template</em>
+<!-- ###MENU### begin -->
+	<table>
+		<tr>
+			<td>###REGION###</td>
+		</tr>
+		<tr><td>###TITLEICON######TITLE###</td><td>###PAGEMENU###</td></tr>
+		<tr>
+			<td colspan="2">
+				<table>
+					<tr>				
+						<!-- ###TABMENU### begin -->
+							<!-- ###GENERAL### -->			
+								<!-- ###GENERALITEM### -->
+									<td>###LINK###ALLGEMEIN###LINK###</td>
+								<!-- ###GENERALITEM### -->			
+							<!-- ###GENERAL### -->	
+							<!-- ###MAP### -->			
+								<!-- ###MAPITEM### -->
+									<td>###LINK###KARTE###LINK###</td>
+								<!-- ###MAPITEM### -->			
+							<!-- ###MAP### -->				
+							<!-- ###VIDEO### -->			
+								<!-- ###VIDEOITEM### -->
+									<td>###LINK###VIDEO###LINK###</td>
+								<!-- ###VIDEOITEM### -->			
+							<!-- ###VIDEO### -->
+							<!-- ###IMAGE### -->			
+								<!-- ###IMAGEITEM### -->
+									<td>###LINK###BILDER###LINK###</td>
+								<!-- ###IMAGEITEM### -->			
+							<!-- ###IMAGE### -->				
+							<!-- ###ACCOMMODATION### -->
+								<!-- ###ACCOMMODATIONITEM### -->
+									<td>###LINK######TITLE######LINK###</td>
+								<!-- ###ACCOMMODATIONITEM### -->
+							<!-- ###ACCOMMODATION### -->
+						<!-- ###TABMENU### end -->					
+					</tr>		
+						<!-- ###ADD_ACCOMMODATION### begin -->
+							<tr>
+								<td colspan="7" align="right">
+									<table>
+										<!-- ###ACCOMMODATION### -->
+											<!-- ###ACCOMMODATIONITEM### -->
+												<td>###LINK######TITLE######LINK###</td>
+											<!-- ###ACCOMMODATIONITEM### -->
+										<!-- ###ACCOMMODATION### -->
+									</table>
+								</td>
+							</tr>
+						<!-- ###ADD_ACCOMMODATION### end -->			
+				</table>	
+			</td>
+		</tr>
+	</table>
+<!-- ###MENU### end -->
+
+<h3>Popup</h3>
+<em>This is the popup template</em>
+<!-- ###POPUP### begin -->
+	###IMAGE###<br>
+	###CAPTION###
+<!-- ###POPUP### end -->
+
+
+<h3>Videotab</h3>
+<em>This is the video tab template</em>
+<!-- ###VIDEOTAB### begin -->
+	<div style="width:800px;overflow:none;clear:left">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="311" height="267" name="loadVideo" align="middle">
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="movie" value="###OBJSWFFILE###" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />
+            <embed src="###EMBEDSWFFILE###" quality="high" bgcolor="#ffffff" width="365" height="390" width="311" height="267" name="loadVideo" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+        </object>
+    </div>
+<!-- ###VIDEOTAB### end -->
+
+
+<h3>Imagetab</h3>
+<em>This is the imagetab template</em>
+<!-- ###IMAGETAB### begin -->
+	<div style="width:800px;overflow:none;clear:left">
+		<!-- ###IMAGELIST### -->
+			<!-- ###IMAGEITEM### -->		
+				<div style="float:right;margin-right:20px;margin-top:20px">		
+					###LINK######IMAGE######LINK###<br>
+					###CAPTION###
+				</div>
+			<!-- ###IMAGEITEM### -->		
+		<!-- ###IMAGELIST### -->				
+	</div>
+<!-- ###IMAGETAB### end -->
+
+
+<h3>Generaltab</h3>
+<em>This is the generaltab template</em>
+<!-- ###GENERALTAB### begin -->
+		<table>
+			<tr>
+				<td>
+					###IMAGE_1###
+				</td>
+				<td rowspan="5">
+					<table>
+						<tr>
+							<td>
+								###DESCRIPTION###
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									Unterkünfte
+									<!-- ###LISTOFACCOMMODATION### -->
+										<!-- ###LISTOFACCOMMODATIONITEM### -->
+											<tr><td>###LINK######TITLE######LINK###</td></tr>
+										<!-- ###LISTOFACCOMMODATIONITEM### -->
+									<!-- ###LISTOFACCOMMODATION### -->
+								</table>
+							</td>							
+						</tr>
+							<!-- ###RELATION### -->
+								<tr>
+									<td>
+										<table>
+											Verwandte Objekte
+												<!-- ###RELATIONLIST### -->											
+													<!-- ###RELATIONITEM### -->						
+														<tr><td>###LINK######TITLE######LINK###</td></tr>
+													<!-- ###RELATIONITEM### -->
+												<!-- ###RELATIONLIST### -->
+										</table>
+									</td>							
+								</tr>								
+							<!-- ###RELATION### -->
+					</table>
+				</td>
+			</tr>
+			<tr>			
+				<td>
+					###IMAGE_2###
+					
+				</td>
+			</tr>
+				<td>
+					###WEATHERINFORMATION###
+				</td>
+			<tr>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td>Merkmale</td>
+						</tr>
+							<!-- ###FEATURE### -->
+								<!-- ###FEATUREITEM### -->
+									<tr><td>###TITLE######ICON###</td></tr>
+								<!-- ###FEATUREITEM### -->
+							<!-- ###FEATURE### -->
+					</table>
+				</td>
+			</tr>		
+		</table>	
+<!-- ###GENERALTAB### end -->
+
+<h3>Accomodationtab</h3>
+<em>This is the accommodationtab template</em>
+<!-- ###ACCOMMODATIONTAB### begin -->
+<table>
+	<tr>
+		<td>
+			###IMAGE_1###
+		</td>
+		<td rowspan="5">
+			<table>
+				<tr>
+					<td>
+						<strong>Typologie/Zimmer</strong>
+						###TYPOLOGIE###
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>An- und Abreise</strong>
+						###ARRIVALANDDEPARTURE###
+					</td>
+				</tr>
+				
+					<!-- ###KITCHEN### begin -->
+						<tr>
+							<td>
+								<strong>Kitchen</strong>
+									###KITCHENLIST###
+							</td>
+						</tr>
+					<!-- ###KITCHEN### end -->	
+									
+					<!-- ###EQUIPMENT### begin -->
+						<tr>
+							<td>
+								<strong>Ausstattung</strong>
+                                ###EQUIPMENTLIST###
+							</td>
+						</tr>
+					<!-- ###EQUIPMENT### end -->
+			</table>
+		</td>
+	</tr>
+	<tr>			
+		<td>
+			###IMAGE_2###	
+		</td>
+	</tr>
+	<tr>
+		<td>
+			###IMAGEGALLERYPREFIX### ###LINK### ###IMAGEGALLERY### ###LINK###
+		</td>
+	<tr>
+		<td colspan="2">
+			###BOOKINGPART###
+		</td>
+	</tr>
+    <tr>
+        <td>
+            ###SPECIALOFFER###
+        </td>
+    </tr>
+	<tr>
+		<td>
+			<strong>Sonstiges</strong>
+			###MISCELLANEOUS###
+		</td>
+	</tr>
+</table>	
+<!-- ###ACCOMMODATIONTAB### begin -->
+
+
+<h3>Booking</h3>
+<p><em>This is the booking template</em></p>
+<!-- ###BOOKING### begin -->
+<table>
+    <tr><td>###LINKSEASON1### ###SEASON1### ###LINKSEASON1###</td><td>###LINKSEASON2### ###SEASON2### ###LINKSEASON2###</td></tr>
+</table>
+<table>
+    <tr>
+        <td>Preise*/Anfrage</td>
+    </tr>
+    <tr>
+        <td>
+            Für Ihre <strong>Buchungsanfrage</strong> klicken Sie einfach auf den Preis der gewünschten Leistung.
+        </td>
+    </tr>
+      <tr>
+        <td>
+        <table>
+            <tr><td>###LINKSEASON1### ###SEASON1### ###LINKSEASON1###</td><td>###LINKSEASON2### ###SEASON2### ###LINKSEASON2###</td></tr>
+        </table>
+        </td>
+      </tr>
+        <tr>
+            <td>Saison</td>
+            <td>
+                <!-- ###SEASON###--->
+                    <!-- ###SEASONITEM### -->
+                        <div style="width:62px;height:20px;float:left;" align="center" valign="top">###TITLE###</div>
+                    <!-- ###SEASONITEM### -->
+                <!-- ###SEASON###--->
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <div style="width:80px;margin-right:10px;margin-bottom:10px">
+                            <strong>Von</strong><br>
+                            <strong>Bis</strong>
+                        </div>
+                    </td>
+                    <td>	
+                        <div style="width:800px;overflow:none;clear:left">								
+                            <!-- ###WHENINFO### begin -->									
+                                    <!-- ###WHENROW1### -->
+                                        <!-- ###WHENROW1ITEM### -->
+                                            <div style="width:100px;height:40px;float:left;">
+                                                <div style="width:100px;height:20px;">###FROM###</div>
+                                                <div style="width:100px;height:20px;">###TILL###</div>
+                                            </div>
+                                        <!-- ###WHENROW1ITEM### -->
+                                    <!-- ###WHENROW1### -->
+                                    <!-- ###WHENROW2### -->
+                                        <!-- ###WHENROW2ITEM### -->														
+                                            <div style="width:100px;height:40px;float:left;">
+                                                <div style="width:100px;height:20px;">###FROM###</div>
+                                                <div style="width:100px;height:20px;">###TILL###</div>
+                                            </div>
+                                        <!-- ###WHENROW2ITEM### -->
+                                    <!-- ###WHENROW2### -->
+                            <!-- ###WHENINFO### end -->	
+                        </div>							
+                    </td>
+                </tr>
+            </table>									
+        </td>
+    </tr>
+    <tr>
+        <td>							
+            ###PRICECATEGORYPART###            
+        </td>
+    </tr>
+</table>        
+<!-- ###BOOKING### end -->
+
+<h3>Price category</h3>
+<p><em>This is the price category template</em></p>
+<!-- ###PRICECATEGORY### begin -->
+    <div style="width:800px;overflow:none;clear:left">								
+        <!-- ###TITLEINFO### -->
+            <!-- ###TITLEITEM### -->
+                <div style="float:left;width:80px;margin-right:10px;margin-bottom:10px">###LINK######TITLE######LINK###</div>
+            <!-- ###TITLEITEM### -->
+        <!-- ###TITLEINFO### -->										
+        <!-- ###PRICEINFO### -->
+            <!-- ###PRICEITEM### -->
+                <div style="width:100px;float:left;margin-right:10px;margin-bottom:10px">###PRICE###€</div>
+            <!-- ###PRICEITEM### -->
+        <!-- ###PRICEINFO### -->
+    </div>
+<!-- ###PRICECATEGORY### end -->
+
+
+<h3>Pricefeature</h3>
+<em>This is the price feature template</em>
+<!-- ###PRICEFEATURE### begin -->
+	<div style="width:800px;overflow:none;clear:left">
+		<!-- ###PRICEFEATUREROW### -->
+			<!-- ###FEATUREITEM### -->
+				<div>###TITLE###</div>
+			<!-- ###FEATUREITEM### -->
+		<!-- ###PRICEFEATUREROW### -->
+	</div>							
+<!-- ###PRICEFEATURE### end -->
+
+
+
+<h3>PAGEBROWSER</h3>
+<em>This is the pagebrowser template</em>
+<!-- ###PAGEBROWSER### begin -->
+<table>
+	<tr>
+		<!-- ###SINGLEPAGE### begin -->
+			<!-- ###PREV### -->			
+				<!-- ###PREVITEM### -->
+					<td>###LINK###<< zurück###LINK###</td>
+				<!-- ###PREVITEM### -->			
+			<!-- ###PREV### -->	
+			
+			<!-- ###PAGE### -->			
+				<!-- ###PAGEITEM### -->
+					<td>###LINK###SEITE###PAGENUMBER######LINK###</td>
+				<!-- ###PAGEITEM### -->			
+			<!-- ###PAGE### -->	
+	
+			<!-- ###NEXT### -->			
+				<!-- ###NEXTITEM### -->
+					<td>###LINK###nächstes >>###LINK###</td>
+				<!-- ###NEXTITEM### -->			
+			<!-- ###NEXT### -->	
+		<!-- ###SINGLEPAGE### end -->		
+		<td>Sie sehen die Treffer ###PAGECURSOR### bis ###PAGEEND### von insgesamt ###FINDS###</td>
+	</tr>
+</table>
+<!-- ###PAGEBROWSER### end -->
+
+<h3>SINGLEPAGEBROWSER</h3>
+<em>This is the single pagebrowser template</em>
+<!-- ###SINGLEPAGEBROWSER### begin -->
+<table>
+	<tr>
+		<td>
+			<< ###BACK###zurück###BACK### zur Übersicht
+		</td>
+	</tr>
+	<tr>
+		<td>
+			###WHICHFIND### von ###TOTALFINDS###
+		</td>
+	</tr>
+	<tr>
+		<!-- ###SINGLEPAGE### begin -->		
+			<!-- ###PREVITEM### -->
+				<td>###LINK###<< zurück###LINK###</td>
+			<!-- ###PREVITEM### -->			
+		
+			<!-- ###NEXTITEM### -->
+				<td>###LINK###nächstes >>###LINK###</td>
+			<!-- ###NEXTITEM### -->				
+		<!-- ###SINGLEPAGE### end -->		
+	</tr>
+</table>
+<!-- ###SINGLEPAGEBROWSER### end -->
+
+<h3>Request</h3>
+<em>This is the request template</em>
+<!-- ###REQUEST### begin -->
+<h3>Buchungsanfrage:</h3>
+    <form action="###FORM###" name="tx_chtrip_pi1" method="post">
+      <table>
+        <tr><td colspan="2">
+                        Region: ###REGION###<br />
+                        Typ: ###OBJTYPE###<br />
+                        Objekt: ###OBJNAME### <br>
+						Unterkunft: ###OBJACCOMMODATION###<br />
+                        Kategorie: ###CATEGORY### <br />
+                </td>
+        </tr>
+        <tr>
+          <td><strong>Reisezeitraum*</strong></td>
+          <td rowspan="2">
+                        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>von</td>
+                <td>###DATEFROMREQ######DATEFROMNOTVALID###<input name="tx_chtrip_pi1[datefrom]" type="text" id="tx_chtrip_pi1[datefrom]" value="###DATEFROM###" maxlength="10" class="form" /></td>
+              </tr>
+              <tr>
+                <td>bis</td>
+                <td>###DATETILLREQ######DATETILLNOTVALID###<input name="tx_chtrip_pi1[datetill]" type="text" id="tx_chtrip_pi1[datetill]" value="###DATETILL###" maxlength="10" class="form" /></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><strong>Adresse</strong></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>Anrede*</td><td><input type="radio" name="tx_chtrip_pi1[anrede]" value="Frau" ###FRAUCHECKED###/>Frau&nbsp; <input type="radio" name="tx_chtrip_pi1[anrede]" value="Herr" ###HERRCHECKED###/>Herr</td></tr>
+        <tr>
+          <td>Vorname*</td>
+          <td>###FORENAMEREQ###<input type="text" name="tx_chtrip_pi1[vorname]" value="###FORENAME###" class="form"/></td>
+        </tr>
+        <tr>
+          <td>Name*</td><td>###NAMEREQ###<input type="text" name="tx_chtrip_pi1[nachname]" value="###NAME###" class="form"/></td></tr>       
+        <tr><td>Straße*</td><td>###STREETREQ###<input type="text" name="tx_chtrip_pi1[str]" value="###STREET###" class="form"/></td></tr>
+        <tr><td>PLZ/Ort*</td><td>###WHEREREQ###<input type="text" name="tx_chtrip_pi1[ort]" value="###WHERE###" class="form"/></td></tr>
+        <tr>
+          <td>Telefon</td><td><input type="text" name="tx_chtrip_pi1[tel]" value="###PHONE###" class="form"/></td></tr>
+        <tr>
+          <td>Fax</td>
+          <td><input type="text" name="tx_chtrip_pi1[fax]" value="###FAX###" class="form" /></td>
+        </tr>
+        <tr><td>E-Mail*</td><td>###EMAILREQ######EMAILNOTVALID###<input type="text" name="tx_chtrip_pi1[email]" value="###EMAIL###" class="form"/></td></tr>
+        <tr><td>Newsletter</td><td><input type="radio" name="tx_chtrip_pi1[nl]" value="1" ###NLYES###/>Ja&nbsp;<input type="radio" name="tx_chtrip_pi1[nl]" value="0" ###NLNO###/>Nein</td></tr>
+        <tr><td colspan="2"><strong><br>Firmen-/Rechnungsanschrift</strong></td></tr>
+        <tr>
+        <td>Firmenname</td><td><input type="text" name="tx_chtrip_pi1[name2]" value="###NAME2###" class="form"/></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align="left" valign="top">Sonstiges</td><td><textarea cols="20" rows="3" name="tx_chtrip_pi1[nachricht]">###MESSAGE###</textarea></td></tr>
+                <tr><td>Rechnungsanschrift</td><td><input name="tx_chtrip_pi1[rechnung]" type="radio" value="PRIVATE" ###PRIVATECHECKED### />Privatadresse &nbsp; <input type="radio" name="tx_chtrip_pi1[rechnung]" value="BUSINESS" ###BUSINESSCHECKED###/>Geschäftsadresse</td></tr>
+        <tr><td>*Pflichtfelder</td></tr>
+        <tr><td>&nbsp;</td><td><input type="submit" name="senden" value="Anfrage absenden" class="button" />
+                                <input type="hidden" name="tx_chtrip_pi1[m]" value="send">
+                                <input type="hidden" name="tx_chtrip_pi1[hregion]" value="###HREGION###">
+                                <input type="hidden" name="tx_chtrip_pi1[objtype]" value="###HOBJTYPE###">
+                                <input type="hidden" name="tx_chtrip_pi1[objname]" value="###HOBJNAME###">
+                                <input type="hidden" name="tx_chtrip_pi1[objaccommodation]" value="###HOBJACCOMMODATION###">
+                                <input type="hidden" name="tx_chtrip_pi1[category]" value="###HCATEGORY###">
+                                <input type="hidden" name="tx_chtrip_pi1[id_code]" value="###HID_CODE###">
+                                </td></tr>
+      </table>
+    </form>
+<!-- ###REQUEST### end -->
+
+<h3>Confirmation</h3>
+<em>This is the confirmation template</em>
+<!-- ###CONFIRMATION### begin -->
+	<h3>Vielen Dank f&uuml;r Ihre Anfrage!</h3>
+	<P>Der entsprechende Ansprechpartner hat Sie bereits in seiner Mailbox und
+	wird sie so schnell wie möglich bearbeiten.<br>
+	Wir freuen uns auf eine erfolgreiche Zusammenarbeit!</P>
+	<P>Ihr <EM><STRONG>amici d'Italia</STRONG></EM> Team</P>
+<!-- ###CONFIRMATION### end -->
+
+
+<h3>HTMLMAIL</h3>
+<em>This is the htmlmail template</em>
+<!-- ###HTMLMAIL### begin -->
+        <p>Region: ###REGION###</p>
+        <p>Typ: ###OBJTYPE###</p>
+        <p>Name: ###OBJNAME###</p>
+        <p>Unterkunft: ###OBJACCOMMODATION###</p>
+        <p>Kategorie: ###CATEGORY###</p>
+        <p>ID Code: ###ID_CODE###</p>        
+        <p>Zeitraum von: ###DATEFROM###</p>
+        <p>Zeitraum bis: ###DATETILL###</p>
+        <p>Anrede: ###SALUTATION### </p>
+        <p>Vorname: ###FORENAME###</p>
+        <p>Name: ###NAME###</p>
+        <p>Strasse: ###STREET###</p>
+        <p>PLZ/Ort: ###WHERE###</p>
+        <p>Tel.: ###PHONE###</p>
+        <p>Fax: ###FAX###</p>
+        <p>E-Mail: ###EMAIL###</p>
+        <p>Firmenname: ###NAME2###</p>
+        <p>Nachricht: ###MESSAGE###</p>
+        <p>Adresstyp: ###BILLINGADDRESS###</p>
+<!-- ###HTMLMAIL### end -->
+
+<h3>PLAINTEXTMAIL</h3>
+<em>This is the htmlmail template</em>
+<!-- ###PLAINTEXTMAIL### begin -->
+        Region: ###REGION###
+        Typ: ###OBJTYPE###
+        Name: ###OBJNAME###
+		Unterkunft: ###OBJACCOMMODATION###
+        Kategorie: ###CATEGORY### 
+        ID Code: ###ID_CODE###        
+        Zeitraum von: ###DATEFROM###
+        Zeitraum bis: ###DATETILL###
+        Anrede: ###SALUTATION###
+        Vorname: ###FORENAME###
+        Name: ###NAME###
+        Strasse: ###STREET###
+        PLZ/Ort: ###WHERE###
+        Tel.: ###PHONE###
+        Fax: ###FAX###
+        E-Mail: ###EMAIL###
+        Firmenname: ###NAME2###
+        Nachricht: ###MESSAGE###
+        Adresstyp: ###BILLINGADDRESS###
+<!-- ###PLAINTEXTMAIL### end -->
+
+<h3>Single Image</h3>
+<em>This is the single image template</em>
+<!-- ###SINGLEIMAGE### begin -->
+	<div style="width:800px;overflow:none;clear:left">
+			<!-- ###IMAGEITEM### -->		
+				<div style="float:right;margin-right:20px;margin-top:20px">		
+					###LINK######IMAGE######LINK###<br>
+					###CAPTION###
+				</div>
+			<!-- ###IMAGEITEM### -->		
+	</div>
+<!-- ###SINGLEIMAGE### end -->

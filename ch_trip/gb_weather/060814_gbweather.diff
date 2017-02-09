@@ -1,0 +1,39 @@
+--- class.tx_gbweather_pi1.php	v0.4.1, 2006-08-24 16:13:07.429404800 +0200
++++ class.tx_gbweather_pi1.php	v0.7.0, 2006-08-24 16:18:29.722840000 +0200
+@@ -128,16 +128,12 @@
+ 		//Desahabilitamos el cache
+ 		$GLOBALS['TSFE']->set_no_cache();
+ 
+-		if ( strlen($this->cObj->data[select_key]) == 0 ) { 
+-			if ( strlen($conf['defaultCode']) == 0 ) {
+-				return $this->pi_wrapInBaseClass("<script>alert('Yahoo!! Weather Plugin ERROR!!\\n\\nPlease enter a yahoo city code on \"CODE\" of this plugin.\\n\\nGo to http://weather.yahoo.com and search our city.\\n\\n\tE.g:.\\n\\tURL:http://weather.yahoo.com/forecast/SPXX0050_f.html\\n\\tCODE: SPXX0050');</script>"); 
+-			} else {
+-				$this->cObj->data[select_key]=$conf['defaultCode'];
+-			}
+-		}
+-
+-		$keys=explode(",",$this->cObj->data[select_key]);
+-
++        if ($GLOBALS['TSFE']->page['tx_chtrip_pi1_weathercode']=='') {
++           return false;
++        }
++        
++        $key = $GLOBALS['TSFE']->page['tx_chtrip_pi1_weathercode'];
++        
+ 		$this->units=$conf;
+ 		if ( strlen($conf['template']) == 0 ) { $conf['template']="EXT:".$this->extKey."/pi1/template.tmpl"; }
+ 		$template = $this->cObj->fileResource($conf['template']);
+@@ -145,12 +141,7 @@
+ 		$t['total']  = $this->cObj->getSubpart($template,"###GBWEATHER###");
+ 		$t['element']  = $this->cObj->getSubpart($template,"###ELEMENT###");
+ 
+-		$i=0; $max=count($keys);
+-		while ($i < $max ) {
+-				$s['###ELEMENT###'].=$this->render_weather($keys[$i],$t['element']);
+-				$i++;
+-
+-		}
++        $s['###ELEMENT###'].=$this->render_weather($key,$t['element']);
+ 		
+ 		return $this->pi_wrapInBaseClass($this->cObj->substituteMarkerArrayCached($template,array(),$s,array()));
+ 	}

@@ -1,0 +1,24 @@
+--- tca.php	2009-05-14 14:25:49.000000000 +0200
++++ ../../../../rte/typo3conf/ext/ch_trip/tca.php	2009-05-07 12:46:25.000000000 +0200
+@@ -304,10 +304,10 @@
+ 				'treeParentUid' => '92,93,94,136',
+ 				'exclTreeParentUid' =>'172,173,186,273',
+ 				'treeNavi' => true,
+-				'size' => 10,
++				'size' => 25,
+ 				'autoSizeMax' => 25,
+ 				'selectedListStyle' => 'width:250px',
+-				'minitems' => 0,
++				'minitems' => 1,
+ 				'maxitems' => 100,
+ 				'foreign_table' => 'tx_chtrip_properties',
+ 				'MM' => 'tx_chtrip_hotel_properties_mm',
+@@ -1167,7 +1167,7 @@
+ 				'treeMaxDepth' => '5',
+ 				'treeView' => 1,
+ 				'treeName' => 'txchtrippropertiess',
+-				'size' => 1,
++				'size' => 10,
+ 				'autoSizeMax' => 25,
+ 				'selectedListStyle' => 'width:250px',
+ 				'minitems' => 0,

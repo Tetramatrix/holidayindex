@@ -1,0 +1,423 @@
+<T3DataStructure>
+        <meta>
+                <langDisable>0</langDisable>
+		<langChildren>1</langChildren>
+	</meta>
+  	<sheets>
+		<sDEF>
+			<ROOT>	
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ch_trip/locallang_db.php:tt_content.pi_flexform.sheet_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<what_to_display>
+			  			<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.what_to_display</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.listNo</numIndex>
+										<numIndex index="1">listNo</numIndex>
+									</numIndex>
+                                    					<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.listAlt</numIndex>
+										<numIndex index="1">listAlt</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.spteaser</numIndex>
+										<numIndex index="1">spteaser</numIndex>
+									</numIndex>
+                                    					<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.splist</numIndex>
+										<numIndex index="1">splist</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</what_to_display>
+					<typeSelection>
+						<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.typeSelection</label>
+							<config>
+								<type>select</type>
+								<form_type>user</form_type>
+								<treeView>1</treeView>
+								<treeName>txchtriptype</treeName>
+								<treeMaxDepth>5</treeMaxDepth>
+								<userFunc>tx_ch_treeview->displayCategoryTree</userFunc>
+								<foreign_table>tx_chtrip_properties</foreign_table>
+								<size>10</size>
+								<autoSizeMax>20</autoSizeMax>
+								<minitems>0</minitems>
+								<maxitems>20</maxitems>
+							</config>
+						</TCEforms>
+					</typeSelection>
+					<findSelection>
+						<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.findSelection</label>
+							<config>
+								<type>select</type>
+								<form_type>user</form_type>
+								<treeView>1</treeView>
+								<treeName>txchtripfind</treeName>
+								<treeMaxDepth>5</treeMaxDepth>
+								<userFunc>tx_ch_treeview->displayCategoryTree</userFunc>
+								<foreign_table>tx_chtrip_properties</foreign_table>
+								<size>10</size>
+								<autoSizeMax>20</autoSizeMax>
+								<minitems>0</minitems>
+								<maxitems>20</maxitems>
+							</config>
+						</TCEforms>
+					</findSelection>
+	
+					<sysfolder>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:ch_trip/locallang_db.php:tt_content.pi_flexform.starting_point</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</sysfolder>
+				</el>
+			</ROOT>
+		</sDEF>
+		<s_template>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.sheet_template</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<template_file>
+						<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.template_file</label>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>tmpl,html,htm</allowed>
+								<max_size>100</max_size>
+								<uploadfolder>uploads/tx_chtrip</uploadfolder>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<selectedListStyle>Width:180px</selectedListStyle>
+							</config>
+							</TCEforms>
+					</template_file>
+				</el>
+			</ROOT>
+		</s_template>		
+		<s_related>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.sheet_related</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<PIDrelatedObjectDisplay>
+						<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.PIDrelatedObjectDisplay</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>10</size>
+								<maxitems>10</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</PIDrelatedObjectDisplay>
+
+					<PIDspecialOfferDisplay>
+						<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.PIDspecialOfferDisplay</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</PIDspecialOfferDisplay>
+					
+					<PIDnewsletterDisplay>
+						<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.PIDnewsletterDisplay</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</PIDnewsletterDisplay>
+				</el>
+			</ROOT>
+		</s_related>					
+		<s_misc>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.sheet_misc</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>		
+					<special_offer_at_a_time>
+			  			<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.specialoffer_at_a_time</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">4</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">5</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</special_offer_at_a_time>					
+					<results_at_a_time>
+			  			<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.results_at_a_time</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">5</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">10</numIndex>
+										<numIndex index="1">10</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">15</numIndex>
+										<numIndex index="1">15</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">20</numIndex>
+										<numIndex index="1">20</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">25</numIndex>
+										<numIndex index="1">25</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">30</numIndex>
+										<numIndex index="1">30</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">35</numIndex>
+										<numIndex index="1">35</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</results_at_a_time>
+					<maxPages>
+			  			<TCEforms>
+							<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.maxPages</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">4</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">5</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">6</numIndex>
+										<numIndex index="1">6</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">7</numIndex>
+										<numIndex index="1">7</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</maxPages>					
+				</el>
+			</ROOT>
+		</s_misc>
+
+	<s_email>
+	  <ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.sheet_email</sheetTitle>
+		</TCEforms>
+	    <type>array</type>
+	    <el>
+		
+		<subject>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.subject</label>
+				<config>
+					<type>input</type>
+					<size>24</size>
+					<max>48</max>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+		</subject>
+		
+		<from_email>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.from_email</label>
+				<config>
+					<type>input</type>
+					<size>24</size>
+					<max>48</max>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+		</from_email>
+		  
+		<from_name>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.from_name</label>
+				<config>
+					<type>input</type>
+					<size>24</size>
+					<max>48</max>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+		</from_name>
+
+		<replyto_email>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.replyto_email</label>
+				<config>
+					<type>input</type>
+					<size>24</size>
+					<max>48</max>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+		</replyto_email>
+		
+		<replyto_name>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.replyto_name</label>
+				<config>
+					<type>input</type>
+					<size>24</size>
+					<max>48</max>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+		</replyto_name>
+
+		<organisation>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.organisation</label>
+				<config>
+					<type>input</type>
+					<size>24</size>
+					<max>48</max>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+		</organisation>
+
+		<returnPath>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.returnPath</label>
+				<config>
+					<type>input</type>
+					<size>24</size>
+					<max>48</max>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+		</returnPath>
+		
+		<priority>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.priority</label>
+				<config>
+					<type>select</type>
+					<items type="array">
+						<numIndex index="0" type="array">
+							<numIndex index="0">LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.label1</numIndex>
+							<numIndex index="1">High</numIndex>
+						</numIndex>
+						<numIndex index="1" type="array">
+							<numIndex index="0">LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.label2</numIndex>
+							<numIndex index="1">Normal</numIndex>
+						</numIndex>					
+						<numIndex index="2" type="array">
+							<numIndex index="0">LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.label3</numIndex>
+							<numIndex index="1">Low</numIndex>
+						</numIndex>
+					</items>
+				</config>
+			</TCEforms>
+		</priority>
+
+		<recipients>
+			<TCEforms>
+				<label>LLL:EXT:ch_trip/locallang_db.php:ch_trip.pi_flexform.recipients</label>
+				<config>
+					<type>text</type>
+					<cols>24</cols>
+					<rows>3</rows>
+					<eval>trim</eval>
+				</config>
+			</TCEforms>
+	      </recipients>
+		
+	    </el>
+	  </ROOT>
+    </s_email>
+
+	</sheets>
+</T3DataStructure>

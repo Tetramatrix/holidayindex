@@ -1,0 +1,154 @@
+
+# General configuration
+
+plugin.tx_chtrip_pi1 {
+
+	pid.data = page:uid
+	
+    # Example of Extension gb_weather integration:
+    ==============================================
+
+    plugin.tx_chtrip_pi1.weatherInfo = COA
+    plugin.tx_chtrip_pi1.weatherInfo {
+        20 < plugin.tx_gbweather_pi1
+    }
+     
+    general_stdWrap {
+     parseFunc < lib.parseFunc_RTE
+     parseFunc.tags.link.typolink.ATagParams = class="default"
+     parseFunc.nonTypoTagStdWrap.encapsLines.nonWrappedTag >
+     br = 1
+	}
+
+	rte_stdWrap {
+     parseFunc < lib.parseFunc_RTE
+     parseFunc.tags.link.typolink.ATagParams = class="default"	
+	}
+	
+	dateFormat = d.m.Y
+	
+	titleLink.ATagParams = class="file"
+	
+	menuLink.ATagParams = class="menu"
+	menuActLink.ATagParams = class="menu-ak"
+	menu_stdWrap.crop = 20 | ...
+	
+	listLink.ATagParams = class="list"
+	catLink.ATagParams = class="cat"
+	popUpLink.ATagParams = class="popup"
+	singlePageBrowserLink.ATagParams = class="small"
+	moreLink.ATagParams = class="more"
+	
+	pageBrowserLink.ATagParams = class="pageBrowserLink"
+	pageBrowserLinkAct.ATagParams = class="pageBrowserLinkAct"
+    
+    specialOfferLink.ATagParams  = class="offer"
+
+	findImg = IMAGE
+	findImg {
+          file = OVERWRITTEN
+		  file.maxW = 130
+	}
+	
+	previewImg = IMAGE
+	previewImg {
+          file = OVERWRITTEN
+		  file.maxW = 185
+	}
+	
+    mapImg = IMAGE
+	mapImg {
+          file = OVERWRITTEN
+		  file.maxW = 550
+	}
+    
+	icon = IMAGE
+	icon {
+          file = OVERWRITTEN
+		  file.maxW = 30
+		  params = align="absmiddle"
+	}
+	
+	popUpImg = IMAGE
+	popUpImg {
+          file = OVERWRITTEN
+		  file.maxW = 400
+	}
+	
+	_LOCAL_LANG.de {
+		DATEFROMREQ = <font color="red">Von Datum fehlt!</font><br>	
+		DATETILLREQ = <font color="red">Bis Datum fehlt!</font><br>
+		NAMEREQ = <font color="red">Name fehlt!</font><br>
+		FORENAMEREQ = <font color="red">Vorname fehlt!</font><br>	
+		STREETREQ = <font color="red">Straße fehlt!</font><br>
+		WHEREREQ = <font color="red">PLZ/Ort fehlt!</font><br>
+		EMAILREQ = <font color="red">E-Mail fehlt!</font><br>
+		EMAILNOTVALID = <font color="red">E-Mail nicht valide!</font><br>
+		DATEFROMNOTVALID = <font color="red">Datum nicht valide! Valides Format ist: dd.mm.yyyy</font><br>		
+		DATETILLNOTVALID = <font color="red">Datum nicht valide! Valides Format ist: dd.mm.yyyy</font><br>
+		Province = Province:&nbsp;
+		requestperunit = Preis pro Einheit & Nacht auf Anfrage möglich (mind. Aufenthalt 2 Nächte)
+		requestperperson = Preis pro Person & Nacht auf Anfrage möglich (mind. Aufenthalt 2 Nächte)
+		halfboard = Halbpension möglich, Preise auf Anfrage.	
+	}
+
+	_LOCAL_LANG.default {
+		DATEFROMREQ = <font color="red">Von Datum fehlt!</font><br>	
+		DATETILLREQ = <font color="red">Bis Datum fehlt!</font><br>
+		NAMEREQ = <font color="red">Name fehlt!</font><br>
+		FORENAMEREQ = <font color="red">Vorname fehlt!</font><br>	
+		STREETREQ = <font color="red">Straße fehlt!</font><br>
+		WHEREREQ = <font color="red">PLZ/Ort fehlt!</font><br>
+		EMAILREQ = <font color="red">E-Mail fehlt!</font><br>
+		EMAILNOTVALID = <font color="red">E-Mail nicht valide!</font><br>
+		DATEFROMNOTVALID = <font color="red">Datum nicht valide! Valides Format ist: dd.mm.yyyy</font><br>		
+		DATETILLNOTVALID = <font color="red">Datum nicht valide! Valides Format ist: dd.mm.yyyy</font><br>
+		Province = Provinz:&nbsp;
+		requestperunit = Preis pro Einheit & Nacht auf Anfrage möglich (mind. Aufenthalt 2 Nächte)
+		requestperperson = Preis pro Person & Nacht auf Anfrage möglich (mind. Aufenthalt 2 Nächte)
+		halfboard = Halbpension möglich, Preise auf Anfrage.	
+
+	}
+	
+}
+
+# Metatags user function (Do not remove!)
+plugin.tx_chtrip_pi1.metatags = USER
+plugin.tx_chtrip_pi1.metatags.userFunc = tx_chtrip_pi1->metatags
+
+# Sitemap configuration
+plugin.tx_chtrip_pi2 {
+    sitemapTitle_stdWrap.wrap = <h1>|</h1>
+    sitemapLink_stdWrap.wrap = |<br>
+    titleLink.ATagParams = class="list"   
+}
+
+
+# Put this in your Typoscript Template:
+# =====================================
+#
+# 1) config.titleTagFunction = tx_chtrip_pi1->browserTitle
+#
+# 2) plugin.tx_chtrip_pi1.browserTitle = My 1st website:
+#
+# 3) page.headerData.10 < plugin.tx_chtrip_pi1.metatags
+#
+# 4) page.5 = USER
+#    page.5.userFunc = tx_chtrip_pi1->weathercode
+#
+# 5)
+#    page.headerData.700 = TEXT
+#    page.headerData.700.value (  <meta name="robots" content="all" />
+#                                <meta name="copyright" content="(c) 2006 by amici d`Italia" />
+#                                <meta http-equiv="content-language" content="de" />
+#                                <link rev="made" href="mailto:info@amici-d-italia.com" />
+#                                <meta http-equiv="reply-to" content="info@amici-d-italia.com" />
+#                                <meta name="author" content="amici d`Italia" />
+#                                <meta name="distribution" content="Global" />
+#                                <meta name="rating" content="General" />
+#                                <meta name="revisit-after" content="14" />
+#                            )
+#
+#
+
+
