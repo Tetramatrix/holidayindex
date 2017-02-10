@@ -3,7 +3,7 @@
 /**
  * Plugin 'TRIP-Travel-Information-Presenter' for the 'ch_trip' extension.
  *
- * @author	Chi Hoang <chibo@gmx.de>
+ * @author	Chi Hoang
  */
 
 class tx_chtrip_list {
